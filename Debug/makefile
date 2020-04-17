@@ -43,7 +43,7 @@ all: theunfinishedproject
 theunfinishedproject: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	g++  -o "theunfinishedproject" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/home/shangweih/ti/ti-cgt-c2000_20.2.1.LTS/lib -o "theunfinishedproject" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
